@@ -4,7 +4,7 @@ namespace App\Criacionais\Singleton;
 
 class LogsSingleton
 {
-    protected static LogsSingleton $instancia;
+    private static LogsSingleton $instancia;
 
     private function __construct() {}
     private function __clone() {}
