@@ -4,14 +4,14 @@ namespace App\Criacionais\Builder;
 
 abstract class FogueteBuilder
 {
-    protected FogueteProduct $foguete;
+    protected FogueteDTO $foguete;
 
     public function __construct()
     {
-        $this->foguete = new FogueteProduct();
+        $this->foguete = new FogueteDTO();
     }
 
-    public function getFoguete(): FogueteProduct
+    public function getFoguete(): FogueteDTO
     {
         return $this->foguete;
     }
