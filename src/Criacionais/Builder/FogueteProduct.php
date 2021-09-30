@@ -2,7 +2,7 @@
 
 namespace App\Criacionais\Builder;
 
-class FogueteDTO
+class FogueteProduct
 {
     protected float $tanqueCombustivel;
     protected string $modelo;
@@ -24,7 +24,7 @@ class FogueteDTO
         return $this->tanqueCombustivel;
     }
 
-    public function setLitrosCombustivel(float $tanqueCombustivel): FogueteDTO
+    public function setLitrosCombustivel(float $tanqueCombustivel): FogueteProduct
     {
         $this->tanqueCombustivel = $tanqueCombustivel;
         return $this;
@@ -35,7 +35,7 @@ class FogueteDTO
         return $this->modelo;
     }
 
-    public function setModelo(string $modelo): FogueteDTO
+    public function setModelo(string $modelo): FogueteProduct
     {
         $this->modelo = $modelo;
         return $this;
@@ -46,7 +46,7 @@ class FogueteDTO
         return $this->numeroMotores;
     }
 
-    public function setNumeroMotores(int $numeroMotores): FogueteDTO
+    public function setNumeroMotores(int $numeroMotores): FogueteProduct
     {
         $this->numeroMotores = $numeroMotores;
         return $this;
@@ -57,7 +57,7 @@ class FogueteDTO
         return $this->numeroLugares;
     }
 
-    public function setNumeroLugares(int $numeroLugares): FogueteDTO
+    public function setNumeroLugares(int $numeroLugares): FogueteProduct
     {
         $this->numeroLugares = $numeroLugares;
         return $this;

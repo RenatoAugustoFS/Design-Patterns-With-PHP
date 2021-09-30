@@ -11,7 +11,7 @@ class FabricaFoguetesDirector
         $this->construtorDeFoguetes = $construtorDeFoguetes;
     }
 
-    public function getFoguete(): FogueteDTO
+    public function getFoguete(): FogueteProduct
     {
         return $this->construtorDeFoguetes->getFoguete();
     }
